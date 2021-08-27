@@ -10,7 +10,7 @@
     "Electron"
   ],
   "scripts": {
-    "start": "node_modules/.bin/concurrently \"webpack-dev-server --mode development\" \"npm run start-electron\"",
+    "start": "node_modules/.bin/concurrently \"webpack-dev-server --host 0.0.0.0 --mode development\" \"npm run start-electron\"",
     "start-electron": "node_modules/.bin/electron .",
     "build": "webpack --mode production"
   },

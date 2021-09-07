@@ -15,8 +15,9 @@ module.exports = AFRAME.registerComponent('browser', {
         // Set the material texture to the canvas used for images from the browser
         this.el.getObject3D('mesh').material.map = this.surfaceTexture;
         this.el.getObject3D('mesh').material.side = THREE.DoubleSide;
-        this.el.getObject3D('mesh').rotation.set(0, 135, 0);
-        this.el.getObject3D('mesh').position.set(0, 0, 0);
+        this.el.getObject3D('mesh').rotation.set(0, 0, 0);
+        this.el.getObject3D('mesh').position.set(0, 0, -0.01);
+
         // Store binded handlers for registering/unregistering events.
         this.mousemove = this.onMouseMove.bind(this);
         this.mousedown = this.onMouseDown.bind(this);

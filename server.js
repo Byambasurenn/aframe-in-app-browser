@@ -49,7 +49,7 @@ class App{
         }
     }
     setupWindow(){
-        this.win.loadURL('http://192.168.0.130');
+        this.win.loadURL('http://192.168.0.111');
         this.win.webContents.setFrameRate(15);
         this.win.webContents.on('paint', (event, dirty, image) => {
             this.last_paint = image.toJPEG(65);
